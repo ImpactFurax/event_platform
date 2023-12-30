@@ -87,7 +87,6 @@ if (eventType === 'user.updated') {
     username: username!,
     photo: image_url,
   }
-
   const updatedUser = await updateUser(id, user)
 
   return NextResponse.json({ message: 'OK', user: updatedUser })
